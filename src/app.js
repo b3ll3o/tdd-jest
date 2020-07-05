@@ -1,4 +1,9 @@
+require("dotenv").config({
+  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env"
+});
+
 const express = require('express');
+const e = require('express');
 
 class AppController {
   constructor(){
